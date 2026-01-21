@@ -289,10 +289,6 @@ header {
     font-size: 0.9rem;
 }
 
-.cta-buttons {
-    margin-top: 30px;
-}
-
 .about-content {
     display: flex;
     justify-content: space-between;

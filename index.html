@@ -35,10 +35,6 @@
             <div class="hero-text">
                 <h2>Full Stack Engineer</h2>
                 <p>I enjoy editing documents and uploading them to the cloud</p>
-                <div class="cta-buttons">
-                    <a href="https://github.com/RhydianJenkins/CV/blob/master/cv.pdf" target="_blank" class="btn primary">My CV</a>
-                    <a href="#contact" class="btn secondary">Get in Touch</a>
-                </div>
             </div>
         </section>
 
@@ -92,38 +88,6 @@
                 </div>
             </div>
         </section>
-
-        <section id="contact">
-            <h2>Get In Touch</h2>
-            <div class="contact-content">
-                <form id="contact-form">
-                    <div id="form-status"></div>
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" rows="5" required></textarea>
-                    </div>
-                    <button id="submit-btn" type="submit" class="btn primary">Send Message</button>
-                </form>
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <p>rhydz@msn.com</p>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <p>Swansea, Wales</p>
-                    </div>
-                </div>
-            </div>
-        </section>
     </div>
 
     <footer>
@@ -139,41 +103,5 @@
             </a>
         </div>
     </footer>
-
-    <script type="text/javascript">
-        emailjs.init("n7CAor54zDlpAXLox");
-
-        const sendEmail = async (event) => {
-            event.preventDefault();
-
-            document.getElementById('submit-btn').textContent = 'Sending...';
-            document.getElementById('submit-btn').disabled = true;
-
-            const templateParams = {
-                name: document.getElementById('name').value,
-                email: document.getElementById('email').value,
-                message: document.getElementById('message').value
-            };
-
-            try {
-                const response = await emailjs.send('service_q0a09bh', 'template_bcmspw9', templateParams);
-
-                console.log('Email sent successfully. Response:', response);
-                document.getElementById('form-status').textContent = 'Thanks for reaching out!';
-                document.getElementById('form-status').style.color = 'green';
-                document.getElementById('submit-btn').textContent = 'Send Message';
-                document.getElementById('submit-btn').disabled = false;
-                document.getElementById('contact-form').reset();
-            } catch (error) {
-                console.error(error);
-                document.getElementById('form-status').textContent = 'Failed to send message.';
-                document.getElementById('form-status').style.color = 'red';
-                document.getElementById('submit-btn').textContent = 'Send Message';
-                document.getElementById('submit-btn').disabled = false;
-            }
-        }
-
-        document.getElementById('contact-form').addEventListener('submit', sendEmail);
-    </script>
 </body>
 </html>
