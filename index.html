@@ -1,107 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rhydian Jenkins | Full Stack Engineer</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rhydian Jenkins — Software Engineer</title>
+  <meta name="description" content="software engineer." />
+  <meta property="og:title" content="Rhydian Jenkins — Software Engineer" />
+  <meta property="og:description" content="software engineer." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            mono: ['"JetBrains Mono"', 'monospace'],
+            sans: ['"Work Sans"', 'sans-serif'],
+          },
+          colors: {
+            background: '#0d1b2a',
+            foreground: '#e6edf3',
+            primary: '#5eead4',
+            'primary-foreground': '#0d1b2a',
+            muted: '#1b2a3e',
+            'muted-foreground': '#8b9bb0',
+            card: '#13243a',
+            border: '#1f3147',
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    body { font-family: 'Work Sans', sans-serif; background: #0d1b2a; color: #e6edf3; }
+    .font-mono { font-family: 'JetBrains Mono', monospace; }
+    html { scroll-behavior: smooth; }
+    @keyframes fadeUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+    .fade-up { animation: fadeUp 0.7s ease-out both; }
+    .hidden { display: none; }
+  </style>
 </head>
-<body>
-    <header>
-        <div class="profile-container">
-            <div class="profile-pic">
-                <img class="img-placeholder" src="./me.jpeg"></img>
-                <div class="animated-border"></div>
-            </div>
-            <div class="profile-text">
-                <h1>Rhydian Jenkins</h1>
-                <p class="title">Full Stack Developer</p>
-            </div>
-        </div>
-    </header>
+<body class="min-h-screen bg-background text-foreground">
 
-    <div class="container">
-        <section id="hero">
-            <div class="code-animation">
-                <pre>
-                    <code>
-                        <span class="comment">$</span>
-                        <span class="keyword">echo "</span><span class="string">Hello world.</span><span class="keyword">"</span>
-                    </code>
-                </pre>
-            </div>
-            <div class="hero-text">
-                <h2>Full Stack Engineer</h2>
-                <p>I enjoy editing documents and uploading them to the cloud</p>
-            </div>
-        </section>
-
-        <section id="about">
-            <h2>About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>Computer Science PhD graduate with an understanding of a variety of software and computing aspects.</p>
-                    <p>
-                        Passionate about learning, and familiar working in Windows and Linux environments, Containers, Virtual Machines and shells.
-                        Strives for a principle first approach when learning, combined with a passion to engage in any challenge with a 'can-do' attitude.
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <section id="skills">
-            <h2>My Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Web</h3>
-                    <ul>
-                        <li>JavaScript (ES6+)</li>
-                        <li>Frameworks (React/Vue/Svelte)</li>
-                        <li>Symfony/Laravel PHP</li>
-                        <li>SQL/NoSQL databases</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3>Technology</h3>
-                    <ul>
-                        <li>Multiple Language includingi TS/PHP/Rust/Go/C++/Bash/...</li>
-                        <li>Swarm Robotics PhD Graduate</li>
-                        <li>DiY Enthuiast and general nerd</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3>Projects</h3>
-                    <ul>
-		        <li>Feel free to check my <a href="https://github.com/rhydianjenkins" target="_blank">public GitHub repositories</a></li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3>Tools & Others</h3>
-                    <ul>
-                        <li>Git</li>
-                        <li>Docker</li>
-                        <li>Nix</li>
-                        <li>Redis</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
+  <section class="relative flex min-h-screen items-center overflow-hidden">
+    <div class="absolute inset-0">
+      <div class="absolute inset-0" style="background: radial-gradient(ellipse at top right, rgba(94,234,212,0.15), transparent 60%), radial-gradient(ellipse at bottom left, rgba(94,234,212,0.08), transparent 50%), #0d1b2a;"></div>
     </div>
-
-    <footer>
-        <div class="social-links">
-            <a href="https://github.com/rhydianjenkins" target="_blank" class="social-icon">
-                <i class="fab fa-github"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/rhydian-jenkins-30309085" target="_blank" class="social-icon">
-                <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="https://github.com/RhydianJenkins/CV/blob/master/cv.pdf" target="_blank" class="social-icon">
-                <i class="fas fa-file-alt"></i>
-            </a>
+    <div class="relative z-10 mx-auto grid max-w-7xl items-center gap-12 px-6 py-32 lg:grid-cols-2">
+      <div class="fade-up">
+        <h1 class="font-mono text-5xl font-bold leading-tight tracking-tight md:text-7xl">
+          Rhydian <span class="text-primary">Jenkins</span>
+        </h1>
+        <p class="mt-4 font-mono text-xl text-primary md:text-2xl">Software Engineer</p>
+        <div class="mt-8 flex flex-wrap gap-4">
+          <a href="https://github.com/rhydianjenkins" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 rounded-md bg-primary px-6 py-3 font-medium text-primary-foreground hover:bg-primary/90 transition-all">
+            GitHub
+            <span aria-hidden="true">→</span>
+          </a>
+          <a href="mailto:rhydz@msn.com" class="inline-flex items-center gap-2 rounded-md border border-border bg-card/50 px-6 py-3 font-medium hover:bg-card transition-all">
+            ✉ Email
+          </a>
         </div>
-    </footer>
+      </div>
+
+      <div class="hidden lg:block fade-up" style="animation-delay: 0.2s;">
+        <div class="overflow-hidden rounded-xl border border-border bg-card/80 backdrop-blur-sm shadow-2xl" id="code-panel">
+          <div class="flex items-center justify-between border-b border-border px-4 py-3">
+            <div class="flex items-center gap-2">
+              <div class="h-3 w-3 rounded-full bg-red-500/80"></div>
+              <div class="h-3 w-3 rounded-full bg-yellow-500/80"></div>
+              <div class="h-3 w-3 rounded-full bg-green-500/80"></div>
+              <span class="ml-2 text-xs text-muted-foreground" id="code-filename">main.go</span>
+            </div>
+            <div class="flex gap-1">
+              <button onclick="setLang('go')" data-lang="go" class="lang-tab rounded px-2 py-1 text-xs font-mono transition-colors bg-primary/20 text-primary">go</button>
+              <button onclick="setLang('rust')" data-lang="rust" class="lang-tab rounded px-2 py-1 text-xs font-mono text-muted-foreground hover:text-foreground transition-colors">rust</button>
+              <button onclick="setLang('php')" data-lang="php" class="lang-tab rounded px-2 py-1 text-xs font-mono text-muted-foreground hover:text-foreground transition-colors">php</button>
+              <button onclick="setLang('js')" data-lang="js" class="lang-tab rounded px-2 py-1 text-xs font-mono text-muted-foreground hover:text-foreground transition-colors">js</button>
+              <button onclick="setLang('bash')" data-lang="bash" class="lang-tab rounded px-2 py-1 text-xs font-mono text-muted-foreground hover:text-foreground transition-colors">bash</button>
+            </div>
+          </div>
+          <div id="code-blocks">
+<pre class="overflow-x-auto p-6 text-sm leading-relaxed font-mono code-block" data-lang="go"><code><span style="color:#c792ea">package</span> main
+
+<span style="color:#c792ea">import</span> <span style="color:#c3e88d">"github.com/rhydianjenkins/engineer"</span>
+
+<span style="color:#c792ea">func</span> <span style="color:#82aaff">main</span>() {
+    me := engineer.<span style="color:#82aaff">New</span>(
+        engineer.<span style="color:#82aaff">WithCoffee</span>(<span style="color:#f78c6c">true</span>),
+        engineer.<span style="color:#82aaff">WithGo</span>(<span style="color:#f78c6c">true</span>),
+    )
+
+    me.<span style="color:#82aaff">Build</span>()
+}</code></pre>
+<pre class="overflow-x-auto p-6 text-sm leading-relaxed font-mono code-block hidden" data-lang="rust"><code><span style="color:#c792ea">use</span> rhydianjenkins::<span style="color:#82aaff">engineer</span>;
+
+<span style="color:#c792ea">fn</span> <span style="color:#82aaff">main</span>() {
+    <span style="color:#c792ea">let</span> me = engineer::Engineer::<span style="color:#82aaff">new</span>()
+        .<span style="color:#82aaff">with_coffee</span>(<span style="color:#f78c6c">true</span>)
+        .<span style="color:#82aaff">with_rust</span>(<span style="color:#f78c6c">true</span>);
+
+    me.<span style="color:#82aaff">build</span>();
+}</code></pre>
+<pre class="overflow-x-auto p-6 text-sm leading-relaxed font-mono code-block hidden" data-lang="php"><code><span style="color:#89ddff">&lt;?php</span>
+
+<span style="color:#c792ea">require</span> <span style="color:#c3e88d">'vendor/autoload.php'</span>;
+
+<span style="color:#c792ea">use</span> RhydianJenkins\<span style="color:#82aaff">Engineer</span>;
+
+$me = (<span style="color:#c792ea">new</span> <span style="color:#82aaff">Engineer</span>())
+    -><span style="color:#82aaff">withCoffee</span>(<span style="color:#f78c6c">true</span>)
+    -><span style="color:#82aaff">withPhp</span>(<span style="color:#f78c6c">true</span>);
+
+$me-><span style="color:#82aaff">build</span>();</code></pre>
+<pre class="overflow-x-auto p-6 text-sm leading-relaxed font-mono code-block hidden" data-lang="js"><code><span style="color:#c792ea">import</span> { <span style="color:#82aaff">Engineer</span> } <span style="color:#c792ea">from</span> <span style="color:#c3e88d">'@rhydianjenkins/engineer'</span>;
+
+<span style="color:#c792ea">const</span> me = <span style="color:#c792ea">new</span> <span style="color:#82aaff">Engineer</span>()
+    .<span style="color:#82aaff">withCoffee</span>(<span style="color:#f78c6c">true</span>)
+    .<span style="color:#82aaff">withJavaScript</span>(<span style="color:#f78c6c">true</span>);
+
+me.<span style="color:#82aaff">build</span>();</code></pre>
+<pre class="overflow-x-auto p-6 text-sm leading-relaxed font-mono code-block hidden" data-lang="bash"><code><span style="color:#676e95">#!/usr/bin/env bash</span>
+
+<span style="color:#c792ea">source</span> /usr/local/lib/engineer.sh
+
+me=$(engineer::new \\
+    --with-coffee \\
+    --with-bash)
+
+me.build()</code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="border-t border-border py-8">
+    <div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-6 md:flex-row">
+      <div class="flex items-center gap-2">
+        <span class="text-primary font-mono">›_</span>
+        <span class="font-mono text-sm">Rhydian Jenkins</span>
+      </div>
+      <div class="flex items-center gap-6">
+        <a href="https://github.com/rhydianjenkins" target="_blank" rel="noopener noreferrer" class="text-muted-foreground hover:text-primary transition-colors" aria-label="GitHub">GitHub</a>
+        <a href="mailto:rhydz@msn.com" class="text-muted-foreground hover:text-primary transition-colors" aria-label="Email">Email</a>
+        <a href="https://raw.githubusercontent.com/RhydianJenkins/CV/refs/heads/master/cv.pdf" class="text-muted-foreground hover:text-primary transition-colors" aria-label="CV">CV</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const filenames = {
+      go: 'main.go',
+      rust: 'main.rs',
+      php: 'index.php',
+      js: 'index.js',
+      bash: 'run.sh'
+    };
+
+    function setLang(lang) {
+      document.querySelectorAll('.code-block').forEach(el => {
+        el.classList.toggle('hidden', el.dataset.lang !== lang);
+      });
+      document.querySelectorAll('.lang-tab').forEach(btn => {
+        const active = btn.dataset.lang === lang;
+        btn.classList.toggle('bg-primary/20', active);
+        btn.classList.toggle('text-primary', active);
+        btn.classList.toggle('text-muted-foreground', !active);
+      });
+      const filename = document.getElementById('code-filename');
+      if (filename) filename.textContent = filenames[lang];
+    }
+  </script>
 </body>
 </html>
